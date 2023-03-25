@@ -1,0 +1,18 @@
+{
+  "name": "intro-section-with-dropdown-navigation-main",
+  "version": "1.0.0",
+  "description": "frontendmentor-challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "author": "Edwin",
+  "license": "ISC",
+  "devDependencies": {
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

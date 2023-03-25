@@ -1,0 +1,219 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* CSS Variables */
+:root {
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-white-2: #fefefa;
+  --clr-black: #070600;
+  --ff-primary: "Roboto", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.12rem;
+  --radius: 1rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  min-height: 100%;
+  /* position: relative; */
+}
+
+/* Global Styles */
+.btn {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  font-size: 1.4rem;
+  padding: 0.7rem 1.3rem;
+  /* text-decoration: none; */
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  display: inline-block;
+  border: solid 1px;
+}
+.btn:hover {
+  /* padding: 0.75rem 1.3rem; */
+  background: var(--clr-white);
+  color: var(--clr-black);
+  transition: var(--transition);
+  border: solid 1px;
+  border-color: var(--clr-grey-5);
+}
+img {
+  display: block;
+  object-fit: contain;
+}
+
+/* 
+NAV-BAR
+*/
+.nav-center {
+  margin: 1.2rem;
+}
+.nav-center button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--clr-white);
+}
+.logo-svg {
+  display: inline-block;
+  cursor: pointer;
+}
+.menu.svg {
+  display: inline-block;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SIDEBAR */
+.sidebar {
+  /* display: none; */
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  /* left: ; */
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-white-2);
+  height: 100%;
+  width: 65%;
+}
+/* .show-sidebar {
+  /* display: ; */
+/* }  */
+.menu-close {
+  display: flex;
+  justify-content: end;
+  margin: 1.5rem;
+}
+.menu-close-svg {
+  cursor: pointer;
+}
+.nav-links {
+  list-style-type: none;
+  margin: 2rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-5);
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: var(--transition);
+}
+.nav-link {
+  width: 100px;
+}
+.nav-link:hover {
+  color: var(--clr-grey-2);
+}
+.features,
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+.aside-btns {
+  /* margin: auto; */
+}
+.register-btn, .login-btn {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  color: var(--clr-grey-4);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.register-btn {
+  /* padding: 2rem; */
+  /* color: red; */
+  width: 100%;
+  border: 1px solid var(--clr-grey-1);
+  
+}
+
+.login-btn{
+  width: 100%;
+  /* border: none; */
+}
+
+/*********
+HEADER SECTION
+**********/
+
+.section-center {
+  width: 100vw;
+}
+.hero-img {
+  object-fit: contain;
+  width: 100vw;
+  height: 25rem;
+}
+.hero-title {
+  margin-top: 2rem;
+  text-align: center;
+}
+.hero-title h1 {
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 900;
+  letter-spacing: var(--spacing);
+  color: var(--clr-black);
+  font-family: var(--ff-primary);
+}
+.hero-text {
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+  color: var(--clr-grey-5);
+  text-align: center;
+  padding: 0.8rem 3rem;
+  font-weight: 500;
+}
+.hero-btn {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-family: var(--ff-primary);
+}
+.hero-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem;
+}
+.hero-title a {
+  margin: 1rem;
+}
+
+/* Footer */
+.attribution {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
